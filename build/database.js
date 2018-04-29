@@ -8,6 +8,45 @@ var initialData = {
       "email": "bigjim@gmail.com",
       "password": "*********"
     }
+    "cities": {
+      "1" : {
+        "_id" : 1,
+        "Name": "Boston"
+        "Username" : "Louis L"
+        "Reviews" : "Really enjoyed my time in Boston!! Has incredible history and so much to do"
+      }
+      "2" : {
+        "_id" : 2,
+        "Name" : "Boston"
+        "Username" : "Blake Riegler"
+        "Reviews" : "The salad here was unbelievable! A lot of good outdoor spots to run and exercise, if you want to become healthy this is a great spot to go!"
+      }
+      "3" : {
+        "_id" : 3,
+        "Name" : "Boston"
+        "Username" : "Tom Hanks"
+        "Reviews" : "The Boston sports teams are always exciting to check out and are always a joy to see with my family!"
+      }
+      "4" : {
+        "_id" : 4,
+        "Name" : "New York"
+        "Username" : "Stephon Marbury"
+        "Reviews" : "Best city in the world, what can I say"
+      }
+      "5" : {
+        "_id" : 5,
+        "Name" : "New York"
+        "Username" : "Adam Sandler"
+        "Reviews" : "The city that never sleeps!! Always something happening, and so many great things to check out"
+      }
+      "6" : {
+        "_id" : 6,
+        "Name" : "Chicago"
+        "Username" : "Al Capone"
+        "Reviews" : "Went to a cubs game and had a great time, 10 out of 10 would highly recommend"
+      }
+      }
+    }
   }
 };
 
