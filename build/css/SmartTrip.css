@@ -1,0 +1,256 @@
+html,body, .container{
+  height: 100%;
+  width: 100%;
+}
+
+.container{
+  background-image: url("../img/map2.png");
+  background-repeat:no-repeat;
+  background-size:cover;
+}
+
+.st-header{
+  background-color: #24c183;
+  height: auto;
+  text-align: center;
+  color: white;
+}
+
+.st-body{
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top:0;
+}
+
+.main-content{
+  top: 15%;
+  height: 85%;
+  max-height: 85%;
+}
+
+.smart-list{
+  height: 70%;
+  margin-bottom: 2%;
+  overflow: scroll;
+  overflow-x: hidden;
+}
+
+.home-btn-div{
+  margin-bottom: 15%;
+}
+
+.plan-trip-div{
+  margin-top: 15%;
+}
+
+.profile-img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
+    height: 40%;
+    border: 4px solid #1a9364;
+    border-radius: 50%;
+}
+::placeholder{
+  color: gray;
+}
+.input{
+  background: transparent;
+  outline:none;
+  border: none;
+}
+
+.input-div, .header-div{
+  border-bottom: 4px solid #1a9364;
+  width: 80%;
+  margin-left: 10%;
+  font-size: x-large;
+  margin-bottom: 5%;
+}
+
+
+.filter-trip{
+  width: 80%;
+  margin-left: 10%;
+  margin-bottom: 5%;
+  font-size: x-large;
+
+}
+.filter-trip input{
+  border-bottom: 4px solid #1a9364;
+}
+
+
+.header-div{
+  text-align: center;
+}
+
+.cancel, .save{
+  margin-bottom: 1%;
+}
+
+.city-btn-div{
+  margin-bottom: 10%;
+}
+
+.btn{
+  width: 100%;
+  background-color: #24c183;
+  border-radius: 15px;
+  border: 4px solid #1a9364;
+  color: white;
+}
+
+.select-event-btn{
+  background-color: #24c183;
+  border: 4px solid #1a9364;
+  border-radius: 15px;
+  color: white;
+}
+
+.review, .events{
+  width: 80%;
+  margin-left: 10%;
+  border: 4px solid #1a9364;
+  background: #eddede;
+  margin-bottom: 5%;
+}
+
+.hob{
+  margin-top: 2%;
+  margin-bottom: 5%;
+  height: 40%;
+
+}
+
+.hobbies{
+  width: 80%;
+  height:100%;
+  margin-left: 10%;
+  border: 4px solid #1a9364;
+  padding-bottom: 2%;
+
+}
+.hobbies-header{
+  text-align: center;
+  font-size: x-large;
+  font-weight: bold;
+  margin-bottom: 2%;
+}
+.hobbies-body{
+  max-height: 80%;
+  padding: 2%;
+  font-size: x-large;
+  overflow: scroll;
+  overflow-x: hidden;
+
+}
+
+.categories{
+  background: transparent;
+}
+
+.review-header, .hobbies-header, .events-header{
+  background: #24c183;
+  color: white;
+}
+
+.select-event-btn{
+  margin-left: 2%;
+  margin-bottom: 2%;
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #24c183;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #1a9364;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+.categories text{
+  margin-left: 4%;
+  border-bottom: 4px solid #1a9364;
+  padding-left: none !important;
+}
+
+/* Customize the label (the container) */
+.categories {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: x-large;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Hide the browser's default checkbox */
+.categories input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+  position: absolute;
+  bottom: 0%;
+  left: 0;
+  height: 35px;
+  width: 35px;
+  background-color: transparent;
+  border: 2px solid #1a9364;
+}
+
+/* On mouse-over, add a grey background color */
+.categories:hover input ~ .checkmark {
+  background-color: #24c183;
+}
+
+/* When the checkbox is checked, add a blue background */
+.categories input:checked ~ .checkmark {
+  background-color: transparent;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the checkmark when checked */
+.categories input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the checkmark/indicator */
+.categories .checkmark:after {
+  right:10px;
+  top: -5px;
+  width: 12px;
+  height: 30px;
+  border: solid #24c183;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
