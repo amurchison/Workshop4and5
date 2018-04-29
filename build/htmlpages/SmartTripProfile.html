@@ -45,13 +45,13 @@
               <input id="password" class="input" type="text" placeholder="********">
             </div>
             <div class="save col-md-5 col-xs-5 col-sm-5 col-xs-offset-1 col-sm-offset-1 col-md-offset-1">
-              <button id="savebtn" class="btn"><h2><strong>Save</strong></h2></button>
+              <button class="btn" onclick="saveProfile()"><h2><strong>Save</strong></h2></button>
             </div>
             <div class="cancel col-md-5 col-xs-5 col-sm-5">
-              <button class="btn"><h2><strong>Cancel</strong></h2></button>
+              <button class="btn" onclick="cancel()"><h2><strong>Cancel</strong></h2></button>
             </div>
             <div class="col-md-10 col-xs-10 col-sm-10 col-xs-offset-1 col-sm-offset-1 col-md-offset-1">
-              <button class="btn" onclick= setUsername()><h2><strong>Your Trips</strong></h2></button>
+              <button class="btn"><h2><strong>Your Trips</strong></h2></button>
             </div>
           </div>
           <div class="row">
@@ -69,6 +69,27 @@
     document.getElementById('input').placeholder = getUsername();
     document.getElementById('email').placeholder = getEmail();
     document.getElementById('password').placeholder = getPassword();
+    function saveProfile(){
+       var temp = document.getElementById('input').value;
+       document.getElementById('input').value = "";
+       document.getElementById('input').placeholder = temp;
+       temp = document.getElementById('email').value;
+       document.getElementById('email').value = "";
+       document.getElementById('email').placeholder = temp;
+       temp = document.getElementById('password').value;
+       document.getElementById('password').value = "";
+       var newpass = '';
+       for (let value of temp) {
+         newpass = newpass + '*';
+       }
+       document.getElementById('password').placeholder = newpass;
+     }
+
+     function cancel(){
+       document.getElementById('input').value = "";
+       document.getElementById('email').value = "";
+       document.getElementById('password').value = "";
+      }
 
   </script>
 </body>

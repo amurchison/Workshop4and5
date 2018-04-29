@@ -4,9 +4,9 @@ var initialData = {
     // This user has id "1".
     "1": {
       "_id": 1,
-      "userName": "fuckme",
-      "email": "fuckme@gmail.com",
-      "password": "fuck"
+      "userName": "BigJim",
+      "email": "bigjim@gmail.com",
+      "password": "*********"
     }
   }
 };
