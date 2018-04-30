@@ -16,12 +16,20 @@ html,body, .container{
   color: white;
 }
 
+#write-review-body{
+  width: 100%;
+}
+
+.modal-title{
+}
+
 
 .st-body{
   width: 100%;
   height: 90%;
   position: absolute;
   top: 6.5%;
+
 }
 
 .main-content{
