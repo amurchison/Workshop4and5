@@ -9,12 +9,18 @@ html,body, .container{
   background-size:cover;
 }
 
+.homelink{
+  color: white;
+}
 
 .st-header{
   background-color: #1ba06b;
   text-align: center;
-  color: white;
   overflow: hidden;
+}
+
+.homelink:hover{
+  color: #333333;
 }
 
 #write-review-body{
