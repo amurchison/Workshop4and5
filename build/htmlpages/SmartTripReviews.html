@@ -108,7 +108,7 @@
               </div>
             </div>
 
-            <div class="review row">
+            <div id="review-post" class="review row" hidden>
               <div class="review-header">
                 <h3 style="display:inline;"><strong id="author"></strong></h3>
                 <h3 style="display:inline;"><strong id="date"></strong></h3>
@@ -136,10 +136,21 @@
 
 
      function post(){
-       console.log(document.getElementById('authorname').value);
-       document.getElementById('author').innerHTML =  document.getElementById('authorname').value;
-       document.getElementById('date').innerHTML = "4/30";
+
+       var today = new Date();
+       var year = today.getFullYear().toString();
+       year = year.charAt(2) + year.charAt(3);
+       var day = today.getDate();
+       var month = today.getMonth()+1;
+       if(day<10){
+         day='0'+day;
+       }
+       var date = month +'/'+ day + '/' + year;
+       document.getElementById('author').innerHTML =  document.getElementById('authorname').value + ': ';
+       document.getElementById('date').innerHTML = date;
        document.getElementById('msg').innerHTML =  document.getElementById('write-review-body').value;
+       document.getElementById('review-post').hidden = false;
+
       }
 
   </script>
